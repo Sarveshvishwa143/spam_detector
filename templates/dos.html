@@ -1,0 +1,66 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style6.css'%}"> 
+    <title>Understanding DoS Attack Spoofing</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Denial-of-Service (DoS) Attack Spoofing</h1>
+        <p>Learn about one of the most common cyber threats in the digital world</p>
+    </header>
+
+    
+    <main>
+    
+        <section id="what-is-dos">
+            <h2>What is a Denial-of-Service (DoS) Attack?</h2>
+            <p>A Denial-of-Service (DoS) attack is a malicious attempt to overwhelm a targeted system, service, or network with excessive traffic, rendering it unavailable to legitimate users. Attackers flood the target with traffic until it can no longer respond or crashes, disrupting normal operations.</p>
+        </section>
+
+    
+        <section id="what-is-spoofing">
+            <h2>What is Spoofing in DoS Attacks?</h2>
+            <p>Spoofing in the context of a DoS attack involves attackers disguising their IP address or identity by using a fake source address. This makes it difficult for the target to trace the source of the attack, and it also prevents the target from blocking the attacker's traffic effectively.</p>
+            <p>Attackers often use IP address spoofing to hide their true location and launch large-scale attacks without being easily detected.</p>
+        </section>
+
+    
+        <section id="types-of-attacks">
+            <h2>Types of DoS Attacks Involving Spoofing</h2>
+            <ul>
+                <li><strong>SYN Flood Attack:</strong> Attackers send a large number of SYN requests with spoofed IP addresses to the target server, consuming its resources and making it unresponsive to legitimate traffic.</li>
+                <li><strong>Smurf Attack:</strong> Attackers send spoofed ICMP echo requests to a network's broadcast address. This causes all devices in the network to respond, overwhelming the target with traffic.</li>
+                <li><strong>UDP Flood Attack:</strong> Attackers send UDP packets to random ports on the target with spoofed IP addresses, forcing the target to process these requests and become unresponsive.</li>
+            </ul>
+        </section>
+
+    
+        <section id="prevention-tips">
+            <h2>How to Prevent DoS Attack Spoofing</h2>
+            <ol>
+                <li><strong>Use Firewalls and Intrusion Detection Systems (IDS):</strong> These tools can help identify and block traffic from suspicious IP addresses.</li>
+                <li><strong>Implement IP Filtering:</strong> Configure routers and firewalls to block traffic from known malicious IP addresses and detect spoofed packets.</li>
+                <li><strong>Enable Rate Limiting:</strong> Limit the number of requests that can be made to your server within a certain time frame to prevent overloads.</li>
+                <li><strong>Monitor Network Traffic:</strong> Regularly monitor your network for unusual traffic patterns that may indicate a DoS attack.</li>
+                <li><strong>Use Anti-Spoofing Tools:</strong> Implement anti-spoofing mechanisms such as Reverse Path Forwarding (RPF) to filter out packets with spoofed addresses.</li>
+            </ol>
+        </section>
+
+    
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>Denial-of-Service attacks with spoofing are a serious threat to online systems. Understanding how these attacks work and taking preventive measures can help protect your network and ensure it remains available to legitimate users.</p>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy;  Cybersecurity Awareness. Cybersync.</p>
+    </footer>
+</body>
+</html>

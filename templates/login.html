@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/style3.css'%}"> 
+    <title>Login & Sign Up</title>
+</head>
+<body>
+    
+    <div class="video-background">
+        <video autoplay muted loop id="bgVideo">
+            <source src="{%static 'video/background.mp4'%}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    
+    <div class="form-container" id="login-container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password" required>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <p class="toggle-link">Don't have an account? <a href="#" onclick="showSignUp()">Sign up</a></p>
+    </div>
+
+    
+    <div class="form-container" id="signup-container" style="display: none;">
+        <h2>Create an Account</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-username">Username</label>
+                <input type="text" id="signup-username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+        <p class="toggle-link">Already have an account? <a href="#" onclick="showLogin()">Log in</a></p>
+    </div>
+
+    <script src="{%static 'js/script3.js'%}"></script> 
+</body>
+</html>
